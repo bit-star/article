@@ -1,0 +1,85 @@
+{
+  "name": "Msg",
+  "fields": [
+    {
+      "fieldName": "deptIdList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "useridList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "toAllUser",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "progressInPercent",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "singleTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "singleUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "coverUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numberOfShards",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "completeSharding",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "msg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "executeTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "agentId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "DdMessageType",
+      "fieldValues": "Voice,ActionCard,Markdown,Oa,Link,File,Text,Image"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "MessageStatus",
+      "fieldValues": "SentSuccessfully,Sending,NotSentYet"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "msgTask",
+      "otherEntityRelationshipName": "msg",
+      "relationshipName": "msgTask"
+    }
+  ],
+  "entityTableName": "msg",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210609015027"
+}

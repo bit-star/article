@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity MsgTask.
+    -->
+    <changeSet id="20210609015028-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="msg_id"
+                                 baseTableName="msg_task"
+                                 constraintName="fk_msg_task__msg_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="msg"/>
+    </changeSet>
+</databaseChangeLog>

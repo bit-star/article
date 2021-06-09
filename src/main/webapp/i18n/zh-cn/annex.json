@@ -1,0 +1,31 @@
+{
+  "articleApp": {
+    "annex": {
+      "home": {
+        "title": "Annexes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Annex",
+        "createOrEditLabel": "创建或编辑 Annex",
+        "notFound": "No Annexes found"
+      },
+      "created": "Annex {{ param }} 创建成功",
+      "updated": "Annex {{ param }} 更新成功",
+      "deleted": "Annex {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Annex {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Annex"
+      },
+      "id": "ID",
+      "spaceId": "Space Id",
+      "fileId": "File Id",
+      "fileName": "File Name",
+      "fileSize": "File Size",
+      "fileType": "File Type",
+      "storageMode": "Storage Mode",
+      "url": "Url",
+      "article": "Article"
+    }
+  }
+}

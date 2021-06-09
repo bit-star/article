@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity DdUser.
+    -->
+    <changeSet id="20210609015026-1" author="jhipster">
+        <createTable tableName="dd_user">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="unionid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="remark" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="userid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="is_leader_in_depts" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="is_boss" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="hired_date" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="is_senior" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="tel" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="department" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="work_place" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="order_in_depts" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="mobile" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="errmsg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="active" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="avatar" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="is_admin" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="is_hide" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="jobnumber" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="extattr" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="state_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="position" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="roles" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20210609015026-1-relations" author="jhipster">
+
+        <createTable tableName="rel_dd_user__module_permission">
+            <column name="module_permission_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="dd_user_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="dd_user_id, module_permission_id" tableName="rel_dd_user__module_permission"/>
+
+        <createTable tableName="rel_dd_user__sub_type">
+            <column name="sub_type_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="dd_user_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="dd_user_id, sub_type_id" tableName="rel_dd_user__sub_type"/>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20210609015026-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/dd_user.csv"
+                  separator=";"
+                  tableName="dd_user">
+            <column name="id" type="numeric"/>
+            <column name="unionid" type="string"/>
+            <column name="remark" type="string"/>
+            <column name="userid" type="string"/>
+            <column name="is_leader_in_depts" type="string"/>
+            <column name="is_boss" type="boolean"/>
+            <column name="hired_date" type="numeric"/>
+            <column name="is_senior" type="boolean"/>
+            <column name="tel" type="string"/>
+            <column name="department" type="string"/>
+            <column name="work_place" type="string"/>
+            <column name="order_in_depts" type="clob"/>
+            <column name="mobile" type="string"/>
+            <column name="errmsg" type="string"/>
+            <column name="active" type="boolean"/>
+            <column name="avatar" type="string"/>
+            <column name="is_admin" type="boolean"/>
+            <column name="is_hide" type="boolean"/>
+            <column name="jobnumber" type="string"/>
+            <column name="name" type="string"/>
+            <column name="extattr" type="clob"/>
+            <column name="state_code" type="string"/>
+            <column name="position" type="clob"/>
+            <column name="roles" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,49 @@
+{
+  "articleApp": {
+    "ddUser": {
+      "home": {
+        "title": "Dd Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Dd User",
+        "createOrEditLabel": "创建或编辑 Dd User",
+        "notFound": "No Dd Users found"
+      },
+      "created": "Dd User {{ param }} 创建成功",
+      "updated": "Dd User {{ param }} 更新成功",
+      "deleted": "Dd User {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Dd User {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Dd User"
+      },
+      "id": "ID",
+      "unionid": "Unionid",
+      "remark": "Remark",
+      "userid": "Userid",
+      "isLeaderInDepts": "Is Leader In Depts",
+      "isBoss": "Is Boss",
+      "hiredDate": "Hired Date",
+      "isSenior": "Is Senior",
+      "tel": "Tel",
+      "department": "Department",
+      "workPlace": "Work Place",
+      "orderInDepts": "Order In Depts",
+      "mobile": "Mobile",
+      "errmsg": "Errmsg",
+      "active": "Active",
+      "avatar": "Avatar",
+      "isAdmin": "Is Admin",
+      "isHide": "Is Hide",
+      "jobnumber": "Jobnumber",
+      "name": "Name",
+      "extattr": "Extattr",
+      "stateCode": "State Code",
+      "position": "Position",
+      "roles": "Roles",
+      "creator": "Creator",
+      "modulePermission": "Module Permission",
+      "subType": "Sub Type"
+    }
+  }
+}

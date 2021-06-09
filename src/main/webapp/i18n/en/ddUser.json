@@ -1,0 +1,49 @@
+{
+  "articleApp": {
+    "ddUser": {
+      "home": {
+        "title": "Dd Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Dd User",
+        "createOrEditLabel": "Create or edit a Dd User",
+        "notFound": "No Dd Users found"
+      },
+      "created": "A new Dd User is created with identifier {{ param }}",
+      "updated": "A Dd User is updated with identifier {{ param }}",
+      "deleted": "A Dd User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Dd User {{ id }}?"
+      },
+      "detail": {
+        "title": "Dd User"
+      },
+      "id": "ID",
+      "unionid": "Unionid",
+      "remark": "Remark",
+      "userid": "Userid",
+      "isLeaderInDepts": "Is Leader In Depts",
+      "isBoss": "Is Boss",
+      "hiredDate": "Hired Date",
+      "isSenior": "Is Senior",
+      "tel": "Tel",
+      "department": "Department",
+      "workPlace": "Work Place",
+      "orderInDepts": "Order In Depts",
+      "mobile": "Mobile",
+      "errmsg": "Errmsg",
+      "active": "Active",
+      "avatar": "Avatar",
+      "isAdmin": "Is Admin",
+      "isHide": "Is Hide",
+      "jobnumber": "Jobnumber",
+      "name": "Name",
+      "extattr": "Extattr",
+      "stateCode": "State Code",
+      "position": "Position",
+      "roles": "Roles",
+      "creator": "Creator",
+      "modulePermission": "Module Permission",
+      "subType": "Sub Type"
+    }
+  }
+}

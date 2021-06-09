@@ -1,0 +1,175 @@
+
+
+
+
+
+
+entity Article {
+	title String,
+    time Instant,
+    text String,
+    contributors String
+}
+
+entity Banner{
+	title String,
+    coverUrl String,
+    name String,
+    brand String,
+    model String,
+    specifications String,
+    isExport Boolean,
+    supplier String,
+    supplierAddress String,
+    supplierCapacity String
+}
+
+entity Type {
+	name String
+}
+
+entity SubType{
+	name String
+    
+}
+
+enum StorageMode{
+	 OSS, Dingtalk
+}
+
+
+entity Annex {
+	spaceId String,
+    fileId String,
+    fileName String,
+    fileSize String,
+    fileType String,
+    spaceId String,
+    storageMode StorageMode,
+    url String
+}
+
+entity Photo{
+	url String
+}
+
+entity ModulePermission{
+	name String,
+    enable Boolean
+}
+
+
+
+
+entity DdDept {
+	name String,
+	parentId String
+}
+
+
+
+
+entity DdUser {
+    unionid String,
+    remark String,
+    userid  String,
+    isLeaderInDepts  String,
+    isBoss  Boolean,
+    hiredDate BigDecimal,
+    isSenior  Boolean,
+    tel  String,
+    department String,
+    workPlace  String ,
+    orderInDepts  TextBlob,
+    mobile  String ,
+    errmsg  String ,
+    active  Boolean,
+    avatar  String ,
+    isAdmin Boolean,
+    isHide Boolean,
+    jobnumber  String,
+    name  String,
+    extattr TextBlob,
+    stateCode  String,
+    position  TextBlob,
+    roles  String
+}
+
+entity Msg{
+	deptIdList String,
+    useridList String,
+    toAllUser Boolean,
+    progressInPercent Integer,
+    title String,
+    singleTitle String,
+    singleUrl String,
+    coverUrl String,
+    numberOfShards Integer,
+    completeSharding Boolean,
+    msg String,
+    executeTime Instant,
+    agentId Long,
+    type DdMessageType,
+    status MessageStatus
+}
+
+entity MsgTask{
+    useridList String,
+    taskId Long,
+    rspMsg String,
+    status Integer,
+    progressInPercent Integer,
+    invalidUserIdList String,
+    forbiddenUserIdList String,
+    failedUserIdList String,
+    readUserIdList String,
+    unreadUserIdList String,
+    invalidDeptIdList String,
+    withdraw  Boolean
+}
+
+enum DdMessageType {
+	Voice , ActionCard, Markdown, Oa, Link, File , Text , Image
+}
+
+enum MessageStatus {
+	 SentSuccessfully , Sending, NotSentYet
+}
+
+
+
+
+
+
+relationship ManyToMany {
+	// Job{task(title)} to Task{job}
+    DdUser to ModulePermission,
+    DdUser to SubType 
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Type to SubType,
+    SubType to Article,
+    DdUser{creator} to Article,
+    Banner to Photo,
+    Article to Annex,
+    Msg to MsgTask
+}
+
+relationship ManyToOne {
+	DdDept to Article
+}
+
+
+
+
+paginate * with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+service all with serviceClass
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

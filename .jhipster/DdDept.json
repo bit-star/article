@@ -1,0 +1,31 @@
+{
+  "name": "DdDept",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentId",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "article",
+      "otherEntityRelationshipName": "ddDept",
+      "relationshipName": "article"
+    }
+  ],
+  "entityTableName": "dd_dept",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210609015025"
+}

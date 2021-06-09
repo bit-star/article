@@ -1,0 +1,63 @@
+{
+  "name": "Banner",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "coverUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "brand",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "model",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "specifications",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isExport",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "supplier",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "supplierAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "supplierCapacity",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "photo",
+      "otherEntityRelationshipName": "banner",
+      "relationshipName": "photo"
+    }
+  ],
+  "entityTableName": "banner",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210609015019"
+}

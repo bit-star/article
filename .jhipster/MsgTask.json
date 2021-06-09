@@ -1,0 +1,71 @@
+{
+  "name": "MsgTask",
+  "fields": [
+    {
+      "fieldName": "useridList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taskId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "rspMsg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "progressInPercent",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "invalidUserIdList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "forbiddenUserIdList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "failedUserIdList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "readUserIdList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "unreadUserIdList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "invalidDeptIdList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "withdraw",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "msg",
+      "otherEntityRelationshipName": "msgTask",
+      "relationshipName": "msg"
+    }
+  ],
+  "entityTableName": "msg_task",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210609015028"
+}

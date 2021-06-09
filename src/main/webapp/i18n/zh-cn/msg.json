@@ -1,0 +1,39 @@
+{
+  "articleApp": {
+    "msg": {
+      "home": {
+        "title": "Msgs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Msg",
+        "createOrEditLabel": "创建或编辑 Msg",
+        "notFound": "No Msgs found"
+      },
+      "created": "Msg {{ param }} 创建成功",
+      "updated": "Msg {{ param }} 更新成功",
+      "deleted": "Msg {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Msg {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Msg"
+      },
+      "id": "ID",
+      "deptIdList": "Dept Id List",
+      "useridList": "Userid List",
+      "toAllUser": "To All User",
+      "progressInPercent": "Progress In Percent",
+      "title": "Title",
+      "singleTitle": "Single Title",
+      "singleUrl": "Single Url",
+      "coverUrl": "Cover Url",
+      "numberOfShards": "Number Of Shards",
+      "completeSharding": "Complete Sharding",
+      "msg": "Msg",
+      "executeTime": "Execute Time",
+      "agentId": "Agent Id",
+      "type": "Type",
+      "status": "Status",
+      "msgTask": "Msg Task"
+    }
+  }
+}
