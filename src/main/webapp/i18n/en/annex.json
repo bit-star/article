@@ -1,0 +1,31 @@
+{
+  "articleApp": {
+    "annex": {
+      "home": {
+        "title": "Annexes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Annex",
+        "createOrEditLabel": "Create or edit a Annex",
+        "notFound": "No Annexes found"
+      },
+      "created": "A new Annex is created with identifier {{ param }}",
+      "updated": "A Annex is updated with identifier {{ param }}",
+      "deleted": "A Annex is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Annex {{ id }}?"
+      },
+      "detail": {
+        "title": "Annex"
+      },
+      "id": "ID",
+      "spaceId": "Space Id",
+      "fileId": "File Id",
+      "fileName": "File Name",
+      "fileSize": "File Size",
+      "fileType": "File Type",
+      "storageMode": "Storage Mode",
+      "url": "Url",
+      "article": "Article"
+    }
+  }
+}

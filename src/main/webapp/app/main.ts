@@ -27,6 +27,17 @@ import TranslationService from '@/locale/translation.service';
 import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
 
+import ArticleService from '@/entities/article/article.service';
+import BannerService from '@/entities/banner/banner.service';
+import TypeService from '@/entities/type/type.service';
+import SubTypeService from '@/entities/sub-type/sub-type.service';
+import AnnexService from '@/entities/annex/annex.service';
+import PhotoService from '@/entities/photo/photo.service';
+import ModulePermissionService from '@/entities/module-permission/module-permission.service';
+import DdDeptService from '@/entities/dd-dept/dd-dept.service';
+import DdUserService from '@/entities/dd-user/dd-user.service';
+import MsgService from '@/entities/msg/msg.service';
+import MsgTaskService from '@/entities/msg-task/msg-task.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -85,6 +96,17 @@ new Vue({
 
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,
+    articleService: () => new ArticleService(),
+    bannerService: () => new BannerService(),
+    typeService: () => new TypeService(),
+    subTypeService: () => new SubTypeService(),
+    annexService: () => new AnnexService(),
+    photoService: () => new PhotoService(),
+    modulePermissionService: () => new ModulePermissionService(),
+    ddDeptService: () => new DdDeptService(),
+    ddUserService: () => new DdUserService(),
+    msgService: () => new MsgService(),
+    msgTaskService: () => new MsgTaskService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

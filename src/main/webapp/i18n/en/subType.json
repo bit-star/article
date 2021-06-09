@@ -1,0 +1,27 @@
+{
+  "articleApp": {
+    "subType": {
+      "home": {
+        "title": "Sub Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sub Type",
+        "createOrEditLabel": "Create or edit a Sub Type",
+        "notFound": "No Sub Types found"
+      },
+      "created": "A new Sub Type is created with identifier {{ param }}",
+      "updated": "A Sub Type is updated with identifier {{ param }}",
+      "deleted": "A Sub Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sub Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Sub Type"
+      },
+      "id": "ID",
+      "name": "Name",
+      "article": "Article",
+      "type": "Type",
+      "ddUser": "Dd User"
+    }
+  }
+}

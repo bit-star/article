@@ -1,0 +1,32 @@
+{
+  "name": "ModulePermission",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enable",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "ddUser",
+      "otherEntityRelationshipName": "modulePermission",
+      "relationshipName": "ddUser",
+      "ownerSide": false
+    }
+  ],
+  "entityTableName": "module_permission",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210609015024"
+}

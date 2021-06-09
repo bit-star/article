@@ -1,0 +1,31 @@
+{
+  "articleApp": {
+    "article": {
+      "home": {
+        "title": "Articles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Article",
+        "createOrEditLabel": "创建或编辑 Article",
+        "notFound": "No Articles found"
+      },
+      "created": "Article {{ param }} 创建成功",
+      "updated": "Article {{ param }} 更新成功",
+      "deleted": "Article {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Article {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Article"
+      },
+      "id": "ID",
+      "title": "Title",
+      "time": "Time",
+      "text": "Text",
+      "contributors": "Contributors",
+      "annex": "Annex",
+      "subType": "Sub Type",
+      "ddUser": "Dd User",
+      "ddDept": "Dd Dept"
+    }
+  }
+}

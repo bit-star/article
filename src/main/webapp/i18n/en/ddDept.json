@@ -1,0 +1,26 @@
+{
+  "articleApp": {
+    "ddDept": {
+      "home": {
+        "title": "Dd Depts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Dd Dept",
+        "createOrEditLabel": "Create or edit a Dd Dept",
+        "notFound": "No Dd Depts found"
+      },
+      "created": "A new Dd Dept is created with identifier {{ param }}",
+      "updated": "A Dd Dept is updated with identifier {{ param }}",
+      "deleted": "A Dd Dept is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Dd Dept {{ id }}?"
+      },
+      "detail": {
+        "title": "Dd Dept"
+      },
+      "id": "ID",
+      "name": "Name",
+      "parentId": "Parent Id",
+      "article": "Article"
+    }
+  }
+}

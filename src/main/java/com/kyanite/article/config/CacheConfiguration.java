@@ -48,6 +48,28 @@ public class CacheConfiguration {
             createCache(cm, com.kyanite.article.domain.User.class.getName());
             createCache(cm, com.kyanite.article.domain.Authority.class.getName());
             createCache(cm, com.kyanite.article.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.kyanite.article.domain.Article.class.getName());
+            createCache(cm, com.kyanite.article.domain.Article.class.getName() + ".annexes");
+            createCache(cm, com.kyanite.article.domain.Article.class.getName() + ".ddDepts");
+            createCache(cm, com.kyanite.article.domain.Banner.class.getName());
+            createCache(cm, com.kyanite.article.domain.Banner.class.getName() + ".photos");
+            createCache(cm, com.kyanite.article.domain.Type.class.getName());
+            createCache(cm, com.kyanite.article.domain.Type.class.getName() + ".subTypes");
+            createCache(cm, com.kyanite.article.domain.SubType.class.getName());
+            createCache(cm, com.kyanite.article.domain.SubType.class.getName() + ".articles");
+            createCache(cm, com.kyanite.article.domain.SubType.class.getName() + ".ddUsers");
+            createCache(cm, com.kyanite.article.domain.Annex.class.getName());
+            createCache(cm, com.kyanite.article.domain.Photo.class.getName());
+            createCache(cm, com.kyanite.article.domain.ModulePermission.class.getName());
+            createCache(cm, com.kyanite.article.domain.ModulePermission.class.getName() + ".ddUsers");
+            createCache(cm, com.kyanite.article.domain.DdDept.class.getName());
+            createCache(cm, com.kyanite.article.domain.DdUser.class.getName());
+            createCache(cm, com.kyanite.article.domain.DdUser.class.getName() + ".creators");
+            createCache(cm, com.kyanite.article.domain.DdUser.class.getName() + ".modulePermissions");
+            createCache(cm, com.kyanite.article.domain.DdUser.class.getName() + ".subTypes");
+            createCache(cm, com.kyanite.article.domain.Msg.class.getName());
+            createCache(cm, com.kyanite.article.domain.Msg.class.getName() + ".msgTasks");
+            createCache(cm, com.kyanite.article.domain.MsgTask.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

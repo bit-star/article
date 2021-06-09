@@ -1,0 +1,26 @@
+{
+  "articleApp": {
+    "modulePermission": {
+      "home": {
+        "title": "Module Permissions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Module Permission",
+        "createOrEditLabel": "创建或编辑 Module Permission",
+        "notFound": "No Module Permissions found"
+      },
+      "created": "Module Permission {{ param }} 创建成功",
+      "updated": "Module Permission {{ param }} 更新成功",
+      "deleted": "Module Permission {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Module Permission {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Module Permission"
+      },
+      "id": "ID",
+      "name": "Name",
+      "enable": "Enable",
+      "ddUser": "Dd User"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "articleApp": {
+    "StorageMode": {
+      "null": "",
+      "OSS": "OSS",
+      "Dingtalk": "Dingtalk"
+    }
+  }
+}

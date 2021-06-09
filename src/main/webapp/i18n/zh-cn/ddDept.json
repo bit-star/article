@@ -1,0 +1,26 @@
+{
+  "articleApp": {
+    "ddDept": {
+      "home": {
+        "title": "Dd Depts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Dd Dept",
+        "createOrEditLabel": "创建或编辑 Dd Dept",
+        "notFound": "No Dd Depts found"
+      },
+      "created": "Dd Dept {{ param }} 创建成功",
+      "updated": "Dd Dept {{ param }} 更新成功",
+      "deleted": "Dd Dept {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Dd Dept {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Dd Dept"
+      },
+      "id": "ID",
+      "name": "Name",
+      "parentId": "Parent Id",
+      "article": "Article"
+    }
+  }
+}

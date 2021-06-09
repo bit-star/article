@@ -1,0 +1,36 @@
+{
+  "articleApp": {
+    "msgTask": {
+      "home": {
+        "title": "Msg Tasks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Msg Task",
+        "createOrEditLabel": "创建或编辑 Msg Task",
+        "notFound": "No Msg Tasks found"
+      },
+      "created": "Msg Task {{ param }} 创建成功",
+      "updated": "Msg Task {{ param }} 更新成功",
+      "deleted": "Msg Task {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Msg Task {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Msg Task"
+      },
+      "id": "ID",
+      "useridList": "Userid List",
+      "taskId": "Task Id",
+      "rspMsg": "Rsp Msg",
+      "status": "Status",
+      "progressInPercent": "Progress In Percent",
+      "invalidUserIdList": "Invalid User Id List",
+      "forbiddenUserIdList": "Forbidden User Id List",
+      "failedUserIdList": "Failed User Id List",
+      "readUserIdList": "Read User Id List",
+      "unreadUserIdList": "Unread User Id List",
+      "invalidDeptIdList": "Invalid Dept Id List",
+      "withdraw": "Withdraw",
+      "msg": "Msg"
+    }
+  }
+}

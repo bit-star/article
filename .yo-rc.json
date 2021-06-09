@@ -42,7 +42,9 @@
     "jwtSecretKey": "ZThiMGY0YzliYjUwNTg5ZjZhYjEzZTg3N2JjMTg5ODQ0MzMzOTFmN2MyNjFkOTNlY2RlMjgzMTM4ZTRiNGY5ZjNlZjA2NDc4ZjAwMTgzYzU1ZDZlMmQ2YzI2MDgwYzk1NjA3NmY1MTkyNGU0N2UxYjBhZTBmZTI3MGZhOTcxNzM=",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Article", "Banner", "Type", "SubType", "Annex", "Photo", "ModulePermission", "DdDept", "DdUser", "Msg", "MsgTask"],
+    "lastLiquibaseTimestamp": 1623203428000
   },
   "git-provider": "GitHub",
   "git-company": "bit-star",

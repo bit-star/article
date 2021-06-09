@@ -29,6 +29,50 @@
             <font-awesome-icon icon="th-list" />
             <span class="no-bold" v-text="$t('global.menu.entities.main')">Entities</span>
           </span>
+          <b-dropdown-item to="/article">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.article')">Article</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/banner">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.banner')">Banner</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/type">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.type')">Type</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/sub-type">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.subType')">Sub Type</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/annex">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.annex')">Annex</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/photo">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.photo')">Photo</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/module-permission">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.modulePermission')">Module Permission</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/dd-dept">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.ddDept')">Dd Dept</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/dd-user">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.ddUser')">Dd User</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/msg">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.msg')">Msg</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/msg-task">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.msgTask')">Msg Task</span>
+          </b-dropdown-item>
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </b-nav-item-dropdown>
         <b-nav-item-dropdown

@@ -1,0 +1,57 @@
+{
+  "name": "Article",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "time",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "text",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contributors",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "annex",
+      "otherEntityRelationshipName": "article",
+      "relationshipName": "annex"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "subType",
+      "otherEntityRelationshipName": "article",
+      "relationshipName": "subType"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "ddUser",
+      "otherEntityRelationshipName": "creator",
+      "relationshipName": "ddUser"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "ddDept",
+      "otherEntityRelationshipName": "article",
+      "relationshipName": "ddDept"
+    }
+  ],
+  "entityTableName": "article",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210609015018"
+}

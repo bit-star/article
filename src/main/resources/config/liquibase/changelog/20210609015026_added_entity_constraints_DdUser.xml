@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity DdUser.
+    -->
+    <changeSet id="20210609015026-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="dd_user_id"
+                                 baseTableName="rel_dd_user__module_permission"
+                                 constraintName="fk_rel_dd_user__module_permission__dd_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dd_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="module_permission_id"
+                                 baseTableName="rel_dd_user__module_permission"
+                                 constraintName="fk_rel_dd_user__module_permission__module_permission_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="module_permission"/>
+
+        <addForeignKeyConstraint baseColumnNames="dd_user_id"
+                                 baseTableName="rel_dd_user__sub_type"
+                                 constraintName="fk_rel_dd_user__sub_type__dd_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dd_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="sub_type_id"
+                                 baseTableName="rel_dd_user__sub_type"
+                                 constraintName="fk_rel_dd_user__sub_type__sub_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sub_type"/>
+    </changeSet>
+</databaseChangeLog>

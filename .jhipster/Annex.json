@@ -1,0 +1,52 @@
+{
+  "name": "Annex",
+  "fields": [
+    {
+      "fieldName": "spaceId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fileId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fileName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fileSize",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fileType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "storageMode",
+      "fieldType": "StorageMode",
+      "fieldValues": "OSS,Dingtalk"
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "article",
+      "otherEntityRelationshipName": "annex",
+      "relationshipName": "article"
+    }
+  ],
+  "entityTableName": "annex",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210609015022"
+}

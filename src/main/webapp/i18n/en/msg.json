@@ -1,0 +1,39 @@
+{
+  "articleApp": {
+    "msg": {
+      "home": {
+        "title": "Msgs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Msg",
+        "createOrEditLabel": "Create or edit a Msg",
+        "notFound": "No Msgs found"
+      },
+      "created": "A new Msg is created with identifier {{ param }}",
+      "updated": "A Msg is updated with identifier {{ param }}",
+      "deleted": "A Msg is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Msg {{ id }}?"
+      },
+      "detail": {
+        "title": "Msg"
+      },
+      "id": "ID",
+      "deptIdList": "Dept Id List",
+      "useridList": "Userid List",
+      "toAllUser": "To All User",
+      "progressInPercent": "Progress In Percent",
+      "title": "Title",
+      "singleTitle": "Single Title",
+      "singleUrl": "Single Url",
+      "coverUrl": "Cover Url",
+      "numberOfShards": "Number Of Shards",
+      "completeSharding": "Complete Sharding",
+      "msg": "Msg",
+      "executeTime": "Execute Time",
+      "agentId": "Agent Id",
+      "type": "Type",
+      "status": "Status",
+      "msgTask": "Msg Task"
+    }
+  }
+}
